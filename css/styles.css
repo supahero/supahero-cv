@@ -1,0 +1,266 @@
+@font-face {
+	font-family: "DINPro";
+	src: url("../css/fonts/DINPro.woff") format("woff");
+	src: 
+	url("../css/fonts/DINPro.ttf") format("truetype");
+   }
+
+@font-face {
+	font-family: DINPro-Italic;
+	src: url("../css/fonts/DINPro-Italic.woff") format("woff");
+	src: 
+	url("../css/fonts/DINPro-Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: DINPro-Light;
+	src: url("../css/fonts/DINPro-Light.woff") format("woff");
+	src: 
+	url("../css/fonts/DINPro-Light.ttf") format("truetype");
+}
+
+body {
+	background-color: #525659;
+	height: 1000px;
+}
+
+.wrapper {
+	background-color:#000000;
+	position: relative;
+	width: 735px;
+	height: 1000px;
+	margin: auto;
+	top: -20px;
+}
+
+.avatar img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.header {
+	z-index: 1;
+	background-color: #373945;
+	width: 735px;
+	height: 180px;
+	left: 0px;
+	right: 300px;
+}
+
+.pdf_download {
+	float: right;
+	margin-top: 27px;
+	margin-right: 13px;
+	font-family: "DINPro";
+	background: #f2f2f2;
+	font-size: 16px;
+	width: 40px;
+	height: 24px;
+	padding: 0px 0px 2px 0px;
+    border-radius: 3px 3px 3px 3px;
+    border: 1px solid #f2f2f2;
+}
+
+.switch_lang {
+	display: inline-block;
+	float: left;
+	height: 45px;
+	margin-top: 27px;
+	margin-left: 77%;
+}
+
+.switch_lang a {
+	text-decoration: none;
+}
+
+.switch_lang_left {
+	display: inline-block;
+	background: #d9d9d9;
+	font-family: "DINPro";
+	width: 30px;
+    height: 22px;
+	text-align: center;
+	border-radius: 3px 0 0 3px;
+    border: 1px solid #d9d9d9;
+}
+
+.switch_lang_left_deactivated {
+	display: inline-block;
+	background: #f2f2f2;
+	font-family: "DINPro";
+	width: 30px;
+    height: 22px;
+	text-align: center;
+	border-radius: 3px 0 0 3px;
+    border: 1px solid #f2f2f2;
+}
+
+.switch_lang_right {
+	display: inline-block;
+	background: #f5f8fd;
+	font-family: "DINPro";
+	width: 30px;
+    height: 22px;
+	text-align: center;
+    border: 1px solid #f2f2f2;
+	border-radius: 0 3px 3px 0;
+}
+
+.switch_lang_right_activated {
+	display: inline-block;
+	background: #d9d9d9;
+	font-family: "DINPro";
+	width: 30px;
+    height: 22px;
+	text-align: center;
+    border: 1px solid #d9d9d9;
+	border-radius: 0 3px 3px 0;
+}
+
+h1 {
+	font-family: "DINPro";
+    color:white;
+	height: 50px;
+	margin-left: 30px;
+	margin-top: 0px;
+	text-align: left;
+}
+
+.avatar {
+	position: relative; 
+	z-index: 2;
+	width: 200px;
+	height: 200px;
+	left:  430px;
+	top: -120px;
+}
+ 
+.left_col {
+	position: absolute;
+	z-index: 1;
+	background-color: #f2f2f2;
+	float: left;
+	width: 520px;
+	height: 1000px;
+	top: 160px;
+} 
+
+.intro {
+	position: relative;
+	z-index: 2;
+	background-color: #f2f2f2;
+	font-family: "DINPro";
+    color:black;
+    width: 350px;
+	height: 50px;
+	left: 30px;
+	text-align: left;
+}
+
+.have_job {
+	position: relative;
+	z-index: 2;
+	background-color: #f2f2f2;
+	font-family: "DINPro";
+    color:black;
+    width: 450px;
+	height: 50px;
+	left: 30px;
+	margin-top: 5%;
+	text-align: left;
+}
+
+.study_xp {
+	position: relative;
+	z-index: 2;
+	background-color: #f2f2f2;
+	font-family: "DINPro";
+    color:black;
+    width: 450px;
+	height: 50px;
+	left: 30px;
+	margin-top: 7%;
+	text-align: left;
+}
+
+.previous_job {
+	position: relative;
+	z-index: 2;
+	background-color: #f2f2f2;
+	font-family: "DINPro-Italic";
+    color:black;
+    width: 350px;
+	height: 50px;
+	left: 30px;
+	margin-top: 25%;
+	text-align: left;
+}
+
+.previous_job h2 {
+	font-family: "DINPro";
+}
+
+.date {
+	position: relative;
+	float: left;
+	height: 200px;
+	width: 200px;
+	margin-right: 10%;
+	margin-bottom: -7%;
+	font-family: "DINPro";
+}
+
+.role {
+	position: relative;
+	width: 250px;
+	height: 180px;
+	margin-left: 60%;
+	margin-bottom: -7%;
+	font-family: "DINPro";
+}
+
+.lable {
+	position: relative;
+	font-family: "DINPro-Italic";
+}
+
+a { 
+	color:black;
+   }
+
+.edu {
+	position: inherit;
+	z-index: 2;
+	font-family: "DINPro";
+	margin-top: 65%;
+	left: 30px;
+	width: 450px;
+	height: 180px;
+	text-align: left;
+}
+
+.right_col {
+	position: absolute;
+	z-index: 1;
+	background-color: #d9d9d9;
+	float: right;
+	width: 215px;
+	height: 1000px;
+	top: 160px;
+	left: 520px;
+}
+
+.lists {
+	font-family: "DINPro";
+	width: 185px;
+	height: 100px;
+	margin-top: 60%;
+	margin-left: 10%;
+	text-align: left;
+	word-break: break-all;
+}
+
+.lists h2 {
+	text-align: center;
+}
