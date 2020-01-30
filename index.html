@@ -7,9 +7,13 @@
       </title>
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
       <link rel="stylesheet" type="text/css" href="css/styles.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+      <script type="text/javascript" src="js/topdf.js"></script>
    </head>
    <body>
-      <div class="wrapper">
+      <div id="content" class="wrapper">
          <div class="header">
             <ul class="switch_lang">
                   <li class="switch_lang_left">
@@ -18,7 +22,7 @@
                      <a href="ru.html">RU</a>
                   </li>
             </ul>
-            <button class="pdf_download">
+            <button class="pdf_download" id="convert">
                <a href="docs/en.pdf">PDF</a>
             </button>
             <h1>Vadim Kropotin</h1>
@@ -28,21 +32,27 @@
          </div>
          <div class="left_col">
             <div class="intro">
-               <p>One and a half years PM experience. Looking for a job for growth in the field of application development
+               <p>One and a half years PM experience. Looking for a job for growth in the field of software development
                </p>
             </div>
             <div class="have_job">
                <h2>Preferred jobs</h2>
-               <p>Junior Python Developer/Analyst</p>
+               <p>Junior Python Developer</p>
+		<p>System Analyst</p>
+		<p>UX Designer</p>
             </div>
             <div class="study_xp">
                <h2>Study experience</h2>
                <ul>
-                  <li>Team internship at Playkot - LTV prediction models and visualization - database administrator  
+                  <li>Team internship at Playkot - LTV prediction models and visualization - db administrator  
                      (linux-server, mysql, pandas, Tableau)
                   </li>
-                  <li>Study project - weather data collector with following web display (flask)
+                  <li>Study project - weather data collector with following web display (flask, JQuery, requests)
                   </li>
+		 <li>Study project - telegram weather foreast bot on airfields (python-telegram-bot, BeautifulSoup)
+		  </li>
+		 <li>Study project - article keywords extractor (AWS, boto3, UML)
+		  </li>	
                </ul>
             </div>
             <div class="previous_job">
@@ -86,16 +96,18 @@
                      <li><a href="mailto:kropvad@gmail.com?subject=Hunting">kropvad@gmail.com</a></li>
                      <li><a href="https://www.linkedin.com/in/vadimkropotin/">linkedin.com/in/vadimkropotin</a></li>
                      <li><a href="https://github.com/supahero">github.com/supahero</a></li>
+		     <li><a href="https://t.me/vkropotin">t.me/vkropotin</a></li>
                   </ul>
             </div>
             <div class="lists">
                <h2>Hard Skills</h2>
                   <ul>
-                     <li>python flask</li>
-                     <li>nginx, apache</li>
+                     <li>python</li>
                      <li>git</li>
                      <li>mysql</li>
                      <li>UX/UI design</li>
+		     <li>BDD</li>
+		     <li>Figma</li>
                      <li>agile</li>
                   </ul>
             </div>
