@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <style>
         body { max-width: 800px; margin: auto; padding: 20px; }
         header { display: flex; justify-content: space-between; align-items: center; }
-        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-right: 20px;}
+        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-right: 15px;}
         .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
         .period { margin-left: 15px;}
         .tag { background: #f8f9fa; padding: 5px 10px; border-radius: 15px; font-size: 0.9em; color: #131720; }
@@ -43,6 +43,7 @@
 }
 
 }
+
     </style>
     <script>
         function downloadPDF() {
@@ -53,57 +54,58 @@
             }, 100);
         }
         function toggleLanguage() {
-            window.location.href = window.location.href.includes('index_en.html') ? 'index.html' : 'index_en.html';
+            window.location.href = window.location.href.includes('en.html') ? 'ru.html' : 'en.html';
         }
+
     </script>
 </head>
 <body>
 
-    <div class="header-buttons">
-        <button class="header-btn" onclick="toggleLanguage()">Switch to Russian</button>
-        <button class="header-btn" onclick="downloadPDF()">Download PDF</button>
+<div class="header-buttons">
+    <button class="header-btn" onclick="toggleLanguage()">Switch to Russian</button>
+    <button class="header-btn" onclick="downloadPDF()">Download PDF</button>
+</div>
+
+<header>
+    <div>
+        <h1>Vadim Kropotin</h1>
+        <h2>Fullstack QA | QA Engineer</h2>
+        <p><a href="https://t.me/vkropotin">t.me/vkropotin</a> | <a
+                href="mailto:kropvad@gmail.com">kropvad@gmail.com</a></p>
     </div>
 
-    <header>
-       <div>
-        <h1>Vadim Kropotin</h1>
-        <h2>Fullstack QA Engineer | QA Engineer</h2>
-        <p><a href="https://t.me/vkropotin">t.me/vkropotin</a> | <a href="mailto:kropvad@gmail.com">kropvad@gmail.com</a></p>
-       </div>
+    <img src="img/pic.png" alt="IMG" class="profile-img">
 
-       <img src="img/pic.png" alt="IMG" class="profile-img">
+</header>
 
-    </header>
+<section class="tags">
+    <span class="tag">python</span>
+    <span class="tag">pytest</span>
+    <span class="tag">Selenium</span>
+    <span class="tag">Selenoid</span>
+    <span class="tag">Selenium Grid</span>
+    <span class="tag">Appium</span>
+    <span class="tag">SQL</span>
+    <span class="tag">git</span>
+    <span class="tag">gitlab CI</span>
+    <span class="tag">Allure TestOps</span>
+    <span class="tag">Postman</span>
+    <span class="tag">Proxyman</span>
+    <span class="tag">TDD</span>
+    <span class="tag">BDD</span>
+    <span class="tag">ShiftLeft</span>
+    <span class="tag">Quality Gates</span>
+</section>
+<hr class="solid">
 
-    <section class="tags">
-        <span class="tag">python</span>
-        <span class="tag">pytest</span>
-        <span class="tag">Selenium</span>
-        <span class="tag">Selenoid</span>
-        <span class="tag">Selenium Grid</span>
-        <span class="tag">Appium</span>
-        <span class="tag">SQL</span>
-        <span class="tag">git</span>
-        <span class="tag">gitlab CI</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Allure TestOps</span>
-        <span class="tag">Postman</span>
-        <span class="tag">Fiddler</span>
-        <span class="tag">Proxyman</span>
-        <span class="tag">TDD</span>
-        <span class="tag">BDD</span>
-        <span class="tag">ShiftLeft</span>
-        <span class="tag">Quality Gates</span>
-    </section>
-                <hr class="solid">
+<section>
+    <h3>About me</h3>
+    <p>Fullstack QA Engineer with 4 years of experience in web application testing. Specializing in both automation and
+        manual testing.   FIX THIS SHTIU.</p>
+</section>
+<hr class="solid">
 
-    <section>
-       <h3>About me</h3>
-       <p>Fullstack QA Engineer with 4 years of experience in web application testing. Specializing in both automation and manual testing..</p>
-    </section>
-        <hr class="solid">
-
-    <section>
+<section>
     <h3>Experience</h3>
     <h4>MTS Digital (MTS IT) — Fullstack QA Engineer (Web, Mobile, API)</h4>
     <div class="period">
@@ -113,19 +115,29 @@
 
     <h5>Responsibilities:</h5>
     <ul>
-        <li>50% test automation (e2e, UI + API, Web, Mobile), regression test coverage, automation of new features (100+ tests). Stack: Python + PyTest, Selenium, Selenoid, Appium, Allure.</li>
-        <li>50% manual functional testing (UI + API, Web, Mobile). Maintaining the existing test model, updating test runs, performing regression testing.</li>
+        <li>50% test automation (e2e, UI + API, Web, Mobile), regression test coverage, automation of new features (100+
+            tests). Stack: Python + PyTest, Selenium, Selenoid, Appium, Allure.
+        </li>
+        <li>50% manual functional testing (UI + API, Web, Mobile). Maintaining the existing test model, updating test
+            runs, performing regression testing.
+        </li>
     </ul>
     <h5>Additional Tasks:</h5>
     <ul>
         <li>Test planning and management.</li>
         <li>Release management: release quality assessment and deployment.</li>
-        <li>Onboarding QA engineers, code review for automated tests, documentation maintenance, L-3 and L-2 support.</li>
+        <li>Onboarding QA engineers, code review for automated tests, documentation maintenance, L-3 and L-2 support.
+        </li>
     </ul>
     <h5>Achievements:</h5>
     <ul>
-        <li>Developed an automation project from scratch, including SSO authentication. Configured execution via CI/CD (GitLab CI), distributing tests by criticality. Ensured parallel execution of ~200 automated tests across 4 test environments.</li>
-        <li>Conducted ad-hoc load testing for critical API endpoints (load testing, capacity testing). Deployed a load testing module using Python + FastAPI, Locust.</li>
+        <li>Developed an automation project from scratch, including SSO authentication. Configured execution via CI/CD
+            (GitLab CI), distributing tests by criticality. Ensured parallel execution of ~200 automated tests across 4
+            test environments.
+        </li>
+        <li>Conducted ad-hoc load testing for critical API endpoints (load testing, capacity testing). Deployed a load
+            testing module using Python + FastAPI, Locust.
+        </li>
     </ul>
 </section>
 <hr class="solid">
@@ -145,8 +157,12 @@
     </ul>
     <h5>Achievements:</h5>
     <ul>
-        <li>Improved process stability by introducing TDD and Shift Left principles to the team, reducing critical severity defects.</li>
-        <li>Implemented a new defect management policy with quality metrics and defect containment analysis. Introduced a quality gate approach for two development stages, reducing defect containment by 50% (Q3/Q4).</li>
+        <li>Improved process stability by introducing TDD and Shift Left principles to the team, reducing critical
+            severity defects.
+        </li>
+        <li>Implemented a new defect management policy with quality metrics and defect containment analysis. Introduced
+            a quality gate approach for two development stages, reducing defect containment by 50% (Q3/Q4).
+        </li>
     </ul>
 </section>
 <hr class="solid">
@@ -155,8 +171,8 @@
     <h3>Education</h3>
     <h4>HSE University (2014 - 2020)</h4>
     <div class="misc">
-        <p>BS: IT Management</p>
-        <p>Master's: Applied Mathematics, Human-Computer Interaction</p>
+        <p>BS: IT Product Management</p>
+        <p>MS in Applied Mathematics (Human-Computer Interaction)</p>
     </div>
 </section>
 <hr class="solid">

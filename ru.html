@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме Вадим Кропотин</title>
+    <title>Вадим Кропотин</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
     <style>
         body { max-width: 800px; margin: auto; padding: 20px; }
         header { display: flex; justify-content: space-between; align-items: center; }
-        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-right: 20px;}
+        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-right: 15px;}
         .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
         .period { margin-left: 15px;}
         .tag { background: #f8f9fa; padding: 5px 10px; border-radius: 15px; font-size: 0.9em; color: #131720; }
@@ -43,6 +43,7 @@
 }
 
 }
+
     </style>
     <script>
         function downloadPDF() {
@@ -53,120 +54,135 @@
             }, 100);
         }
         function toggleLanguage() {
-            window.location.href = window.location.href.includes('index_en.html') ? 'index.html' : 'index_en.html';
+            window.location.href = window.location.href.includes('en.html') ? 'ru.html' : 'en.html';
         }
+
     </script>
 </head>
 <body>
 
-    <div class="header-buttons">
-        <button class="header-btn" onclick="toggleLanguage()">Switch to English</button>
-        <button class="header-btn" onclick="downloadPDF()">Download PDF</button>
+<div class="header-buttons">
+    <button class="header-btn" onclick="toggleLanguage()">Switch to English</button>
+    <button class="header-btn" onclick="downloadPDF()">Скачать PDF</button>
+</div>
+
+<header>
+    <div>
+        <h1>Вадим Кропотин</h1>
+        <h2>Fullstack QA | QA Engineer</h2>
+        <p><a href="https://t.me/vkropotin">t.me/vkropotin</a> | <a
+                href="mailto:kropvad@gmail.com">kropvad@gmail.com</a></p>
     </div>
 
-    <header>
-       <div>
-        <h1>Вадим Кропотин</h1>
-        <h2>QA Engineer</h2>
-        <p><a href="t.me/vak">t.me/vak</a> | <a href="mailto:vak@gmail.com">vak@gmail.com</a></p>
-       </div>
+    <img src="img/pic.png" alt="IMG" class="profile-img">
 
-       <img src="img/pic.png" alt="IMG" class="profile-img">
+</header>
 
-    </header>
+<section class="tags">
+    <span class="tag">python</span>
+    <span class="tag">pytest</span>
+    <span class="tag">Selenium</span>
+    <span class="tag">Selenoid</span>
+    <span class="tag">Selenium Grid</span>
+    <span class="tag">Appium</span>
+    <span class="tag">SQL</span>
+    <span class="tag">git</span>
+    <span class="tag">gitlab CI</span>
+    <span class="tag">Allure TestOps</span>
+    <span class="tag">Postman</span>
+    <span class="tag">Proxyman</span>
+    <span class="tag">TDD</span>
+    <span class="tag">BDD</span>
+    <span class="tag">ShiftLeft</span>
+    <span class="tag">Quality Gates</span>
+</section>
+<hr class="solid">
 
-    <section class="tags">
-        <span class="tag">python</span>
-        <span class="tag">pytest</span>
-        <span class="tag">Selenium</span>
-        <span class="tag">Selenoid</span>
-        <span class="tag">Selenium Grid</span>
-        <span class="tag">Appium</span>
-        <span class="tag">SQL</span>
-        <span class="tag">git</span>
-        <span class="tag">gitlab CI</span>
-        <span class="tag">Docker</span>
-        <span class="tag">Allure TestOps</span>
-        <span class="tag">Postman</span>
-        <span class="tag">Fiddler</span>
-        <span class="tag">Proxyman</span>
-        <span class="tag">TDD</span>
-        <span class="tag">BDD</span>
-        <span class="tag">ShiftLeft</span>
-        <span class="tag">Quality Gates</span>
-    </section>
-                <hr class="solid">
+<section>
+    <h3>О себе</h3>
+    <p>QA-инженер с 4 годами опыта в тестировании веб приложений. Специализируюсь на автоматизации и мануальном
+        тестировании. Опыт работы с Python, тестированием API и UI(Web+Mobile), Selenium, Appium и CI/CD.</p>
+</section>
+<hr class="solid">
 
-    <section>
-       <h3>О себе</h3>
-       <p>QA-инженер с 4 годами опыта в тестировании веб приложений. Специализируюсь на автоматизации и мануальном тестировании. Опыт работы с Python, тестированием API и UI(Web+Mobile), Selenium, Appium и CI/CD.</p>
-    </section>
-        <hr class="solid">
+<section>
+    <h3>Опыт</h3>
+    <h4>МТС Digital (МТС ИТ) — Fullstack QA Engineer (Web, Mobile, API)</h4>
+    <div class="period">
+        <p><i>Август 2022 - настоящее время</i></p>
+        <p><i>Перешел в другой продукт внутри компании с расширением ответственности.</i></p>
+    </div>
 
-    <section>
-        <h3>Опыт</h3>
-        <h4>МТС Digital (МТС ИТ) — Fullstack QA Engineer (Web, Mobile, API)</h4>
-        <div class="period">
-            <p><i>Август 2022 - настоящее время</i></p>
-            <p><i>Перешел в другой продукт внутри компании с расширением ответственности.</i></p>
-        </div>
+    <h5>Задачи:</h5>
+    <ul>
+        <li>50% автотестирование (e2e, UI + API, Web, Mobile), покрытие существующего регресса, автоматизация новой
+            функциональности (100+ тестов). Стек: python + pytest, Selenium, Selenoid, Appium, Allure.
+        </li>
+        <li>50% мануальное функциональное тестирование (UI+API, Web, Mobile). Поддержка существующей тестовой модели,
+            актуализация тест-ранов, проведение регресса.
+        </li>
+    </ul>
+    <h5>Сопутствующие задачи:</h5>
+    <ul>
+        <li>Организация и управление тестированием.</li>
+        <li>Релиз-менеджмент: оценка качества релизов, выпуск релизов.</li>
+        <li>Онбординг тестировщиков, код-ревью АТ, ведение документации, L-3 L-2 саппорт.</li>
+    </ul>
+    <h5>Достижения:</h5>
+    <ul>
+        <li>Разработал проект автотестов с нуля, включая SSO-авторизацию. Настроил запуск через CI/CD (GitLab CI),
+            распределяя тесты по степеням критичности. Обеспечил параллельное выполнение ~200 автотестов на 4 тестовых
+            стендах.
+        </li>
+        <li>Провел ad-hoc нагрузочное тестирование критически важных API-эндпоинтов (load testing, capacity testing).
+            Развернул нагрузочный модуль на Python + FastAPI, Locust.
+        </li>
+    </ul>
+</section>
+<hr class="solid">
 
-        <h5>Задачи:</h5>
-        <ul>
-            <li>50% автотестирование (e2e, UI + API, Web, Mobile), покрытие существующего регресса, автоматизация новой функциональности (100+ тестов). Стек: python + pytest, Selenium, Selenoid, Appium, Allure.</li>
-            <li>50% мануальное функциональное тестирование (UI+API, Web, Mobile). Поддержка существующей тестовой модели, актуализация тест-ранов, проведение регресса.</li>
-        </ul>
-        <h5>Сопутствующие задачи:</h5>
-        <ul>
-            <li>Организация и управление тестированием.</li>
-            <li>Релиз-менеджмент: оценка качества релизов, выпуск релизов.</li>
-            <li>Онбординг тестировщиков, код-ревью АТ, ведение документации, L-3 L-2 саппорт.</li>
-        </ul>
-        <h5>Достижения:</h5>
-        <ul>
-            <li>Разработал проект автотестов с нуля, включая SSO-авторизацию. Настроил запуск через CI/CD (GitLab CI), распределяя тесты по степеням критичности. Обеспечил параллельное выполнение ~200 автотестов на 4 тестовых стендах.</li>
-            <li>Провел ad-hoc нагрузочное тестирование критически важных API-эндпоинтов (load testing, capacity testing). Развернул нагрузочный модуль на Python + FastAPI, Locust.</li>
-        </ul>
-    </section>
-        <hr class="solid">
-
-    <section>
-        <h4>МТС (ПАО МТС) — QA инженер (Web)</h4>
-        <div class="period">
+<section>
+    <h4>МТС (ПАО МТС) — QA инженер (Web)</h4>
+    <div class="period">
         <p><i>Март 2021 - Август 2022</i></p>
-        </div>
-        <h5>Задачи:</h5>
-        <ul>
-            <li>Функциональное, интеграционное, регрессионное тестирование (Web, API).</li>
-            <li>Ведение тест-планов, чек-листов, отчетов по регрессу и т. д.</li>
-            <li>Ведение коллекций в Postman с окружениями, использующими prerequisite scripts.</li>
-            <li>Функциональное тестирование веб-сервисов при помощи Proxyman, Fiddler.</li>
-            <li>Тестирование мобильных приложений, UI (сборка мобильных приложений под Android, iOS).</li>
-        </ul>
-        <h5>Достижения:</h5>
-        <ul>
-            <li>Повысил устойчивость качества процессов, внедрение принципов TDD, ShiftLeft в команду. Сокращение дефектов с критическим severity.</li>
-            <li>Перевел команду на новую политику ведения дефектов с учетом базовых метрик качества, defect containment, внедрил подход к оценке качества релизов через quality gates для 2 этапов разработки. Удалось сократить defect containment в 2 раза (Q3/Q4).</li>
-        </ul>
-    </section>
-        <hr class="solid">
+    </div>
+    <h5>Задачи:</h5>
+    <ul>
+        <li>Функциональное, интеграционное, регрессионное тестирование (Web, API).</li>
+        <li>Ведение тест-планов, чек-листов, отчетов по регрессу и т. д.</li>
+        <li>Ведение коллекций в Postman с окружениями, использующими prerequisite scripts.</li>
+        <li>Функциональное тестирование веб-сервисов при помощи Proxyman, Fiddler.</li>
+        <li>Тестирование мобильных приложений, UI (сборка мобильных приложений под Android, iOS).</li>
+    </ul>
+    <h5>Достижения:</h5>
+    <ul>
+        <li>Повысил устойчивость качества процессов, внедрение принципов TDD, ShiftLeft в команду. Сокращение дефектов с
+            критическим severity.
+        </li>
+        <li>Перевел команду на новую политику ведения дефектов с учетом базовых метрик качества, defect containment,
+            внедрил подход к оценке качества релизов через quality gates для 2 этапов разработки. Удалось сократить
+            defect containment в 2 раза (Q3/Q4).
+        </li>
+    </ul>
+</section>
+<hr class="solid">
 
-    <section>
-        <h3>Образование</h3>
-        <h4>ВШЭ (2014 - 2020)</h4>
-        <div class = "misc">
-            <p>BS: IT management</p>
-            <p>Masters: applied mathematics, human-computer interaction</p>
-        </div>
-    </section>
-                    <hr class="solid">
+<section>
+    <h3>Образование</h3>
+    <h4>ВШЭ (2014 - 2020)</h4>
+    <div class="misc">
+        <p>Бакалавриат: менеджмент, специализация — управление IT-продуктами</p>
+        <p>Магистерская программа по прикладной математике (человеко-компьютерное взаимодействие)</p>
+    </div>
+</section>
+<hr class="solid">
 
-    <section>
-        <h3>Языки</h3>
-        <div class = "misc">
+<section>
+    <h3>Языки</h3>
+    <div class="misc">
         <p>Английский - B2</p>
         <p>Русский - родной</p>
-        </div>
-    </section>
+    </div>
+</section>
 </body>
 </html>
