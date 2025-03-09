@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Вадим Кропотин</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css" rel="stylesheet">
     <style>
         body { max-width: 800px; margin: auto; padding: 20px; }
         header { display: flex; justify-content: space-between; align-items: center; }
@@ -20,7 +20,7 @@
         h3::after {
             content: "";
             height: 1px;
-            background: white
+            background: white;
             }
         ul { margin-bottom: 15px; }
         .misc { margin-left: 15px;}
@@ -34,15 +34,14 @@
         }
 
         .header-buttons .header-btn {
-    padding: 8px 16px !important;
-    border: none !important;
-    border-radius: 4px !important;
-    background-color: #2c3e50 !important;
-    color: white !important;
-    cursor: pointer !important;
-}
+        padding: 8px 16px !important;
+        border: none !important;
+        border-radius: 4px !important;
+        background-color: #2c3e50 !important;
+        color: white !important;
+        cursor: pointer !important;
+        }
 
-}
 
     </style>
     <script>
@@ -54,8 +53,9 @@
             }, 100);
         }
         function toggleLanguage() {
-            window.location.href = window.location.href.includes('en.html') ? 'ru.html' : 'en.html';
+            window.location.href = window.location.href.includes('ru.html') ? 'en.html' : 'ru.html';
         }
+
 
     </script>
 </head>
@@ -74,7 +74,7 @@
                 href="mailto:kropvad@gmail.com">kropvad@gmail.com</a></p>
     </div>
 
-    <img src="img/pic.png" alt="IMG" class="profile-img">
+    <img alt="IMG" class="profile-img" src="img/pic.png">
 
 </header>
 
@@ -86,8 +86,8 @@
     <span class="tag">Selenium Grid</span>
     <span class="tag">Appium</span>
     <span class="tag">SQL</span>
-    <span class="tag">git</span>
-    <span class="tag">gitlab CI</span>
+    <span class="tag">Git</span>
+    <span class="tag">GitLab CI/CD</span>
     <span class="tag">Allure TestOps</span>
     <span class="tag">Postman</span>
     <span class="tag">Proxyman</span>
@@ -100,7 +100,8 @@
 
 <section>
     <h3>О себе</h3>
-    <p>QA-инженер с 4 годами опыта в тестировании веб приложений. Специализируюсь на автоматизации и мануальном
+    <p>Fullstack QA-инженер с 4 годами опыта в тестировании веб приложений. Специализируюсь на автоматизации и
+        мануальном
         тестировании. Опыт работы с Python, тестированием API и UI(Web+Mobile), Selenium, Appium и CI/CD.</p>
 </section>
 <hr class="solid">
@@ -110,7 +111,7 @@
     <h4>МТС Digital (МТС ИТ) — Fullstack QA Engineer (Web, Mobile, API)</h4>
     <div class="period">
         <p><i>Август 2022 - настоящее время</i></p>
-        <p><i>Перешел в другой продукт внутри компании с расширением ответственности.</i></p>
+        <p><i>Перешел в другой продукт внутри компании с расширенными обязанностями.</i></p>
     </div>
 
     <h5>Задачи:</h5>
@@ -125,8 +126,8 @@
     <h5>Сопутствующие задачи:</h5>
     <ul>
         <li>Организация и управление тестированием.</li>
-        <li>Релиз-менеджмент: оценка качества релизов, выпуск релизов.</li>
-        <li>Онбординг тестировщиков, код-ревью АТ, ведение документации, L-3 L-2 саппорт.</li>
+        <li>Релиз-менеджмент: оценка качества и выпуск релизов.</li>
+        <li>Онбординг тестировщиков, код-ревью АТ, ведение документации, поддержка L-2 и L-3 уровня.</li>
     </ul>
     <h5>Достижения:</h5>
     <ul>
@@ -156,11 +157,11 @@
     </ul>
     <h5>Достижения:</h5>
     <ul>
-        <li>Повысил устойчивость качества процессов, внедрение принципов TDD, ShiftLeft в команду. Сокращение дефектов с
-            критическим severity.
+        <li>Повысил устойчивость качества процессов, внедрение принципов TDD, ShiftLeft в команду. Сокращение
+            количества критических дефектов.
         </li>
         <li>Перевел команду на новую политику ведения дефектов с учетом базовых метрик качества, defect containment,
-            внедрил подход к оценке качества релизов через quality gates для 2 этапов разработки. Удалось сократить
+            внедрение quality gates для 2 этапов разработки. Удалось сократить
             defect containment в 2 раза (Q3/Q4).
         </li>
     </ul>
@@ -180,8 +181,8 @@
 <section>
     <h3>Языки</h3>
     <div class="misc">
-        <p>Английский - B2</p>
-        <p>Русский - родной</p>
+        <p>Английский — B2</p>
+        <p>Русский - родной язык</p>
     </div>
 </section>
 </body>
