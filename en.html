@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadim Kropotin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@latest/css/pico.min.css">
+    <style>
+        body { max-width: 800px; margin: auto; padding: 20px; }
+        header { display: flex; justify-content: space-between; align-items: center; }
+        .profile-img { border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin-right: 20px;}
+        .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
+        .period { margin-left: 15px;}
+        .tag { background: #f8f9fa; padding: 5px 10px; border-radius: 15px; font-size: 0.9em; color: #131720; }
+                .header-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        h3::after {
+            content: "";
+            height: 1px;
+            background: white
+            }
+        ul { margin-bottom: 15px; }
+        .misc { margin-left: 15px;}
+        hr.line {
+        border-top: 3px solid #c7cbd4;
+        border-radius: 15px; }
+        .header-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .header-buttons .header-btn {
+    padding: 8px 16px !important;
+    border: none !important;
+    border-radius: 4px !important;
+    background-color: #2c3e50 !important;
+    color: white !important;
+    cursor: pointer !important;
+}
+
+}
+    </style>
+    <script>
+        function downloadPDF() {
+            document.querySelector('.header-buttons').style.display = 'none';
+            setTimeout(() => {
+                window.print();
+                document.querySelector('.header-buttons').style.display = 'flex'; // Restore after printing
+            }, 100);
+        }
+        function toggleLanguage() {
+            window.location.href = window.location.href.includes('index_en.html') ? 'index.html' : 'index_en.html';
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header-buttons">
+        <button class="header-btn" onclick="toggleLanguage()">Switch to Russian</button>
+        <button class="header-btn" onclick="downloadPDF()">Download PDF</button>
+    </div>
+
+    <header>
+       <div>
+        <h1>Vadim Kropotin</h1>
+        <h2>Fullstack QA Engineer | QA Engineer</h2>
+        <p><a href="https://t.me/vkropotin">t.me/vkropotin</a> | <a href="mailto:kropvad@gmail.com">kropvad@gmail.com</a></p>
+       </div>
+
+       <img src="img/pic.png" alt="IMG" class="profile-img">
+
+    </header>
+
+    <section class="tags">
+        <span class="tag">python</span>
+        <span class="tag">pytest</span>
+        <span class="tag">Selenium</span>
+        <span class="tag">Selenoid</span>
+        <span class="tag">Selenium Grid</span>
+        <span class="tag">Appium</span>
+        <span class="tag">SQL</span>
+        <span class="tag">git</span>
+        <span class="tag">gitlab CI</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Allure TestOps</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Fiddler</span>
+        <span class="tag">Proxyman</span>
+        <span class="tag">TDD</span>
+        <span class="tag">BDD</span>
+        <span class="tag">ShiftLeft</span>
+        <span class="tag">Quality Gates</span>
+    </section>
+                <hr class="solid">
+
+    <section>
+       <h3>About me</h3>
+       <p>Fullstack QA Engineer with 4 years of experience in web application testing. Specializing in both automation and manual testing..</p>
+    </section>
+        <hr class="solid">
+
+    <section>
+    <h3>Experience</h3>
+    <h4>MTS Digital (MTS IT) — Fullstack QA Engineer (Web, Mobile, API)</h4>
+    <div class="period">
+        <p><i>August 2022 - Present</i></p>
+        <p><i>Transferred to another product within the company with expanded responsibilities.</i></p>
+    </div>
+
+    <h5>Responsibilities:</h5>
+    <ul>
+        <li>50% test automation (e2e, UI + API, Web, Mobile), regression test coverage, automation of new features (100+ tests). Stack: Python + PyTest, Selenium, Selenoid, Appium, Allure.</li>
+        <li>50% manual functional testing (UI + API, Web, Mobile). Maintaining the existing test model, updating test runs, performing regression testing.</li>
+    </ul>
+    <h5>Additional Tasks:</h5>
+    <ul>
+        <li>Test planning and management.</li>
+        <li>Release management: release quality assessment and deployment.</li>
+        <li>Onboarding QA engineers, code review for automated tests, documentation maintenance, L-3 and L-2 support.</li>
+    </ul>
+    <h5>Achievements:</h5>
+    <ul>
+        <li>Developed an automation project from scratch, including SSO authentication. Configured execution via CI/CD (GitLab CI), distributing tests by criticality. Ensured parallel execution of ~200 automated tests across 4 test environments.</li>
+        <li>Conducted ad-hoc load testing for critical API endpoints (load testing, capacity testing). Deployed a load testing module using Python + FastAPI, Locust.</li>
+    </ul>
+</section>
+<hr class="solid">
+
+<section>
+    <h4>MTS (PJSC MTS) — QA Engineer (Web)</h4>
+    <div class="period">
+        <p><i>March 2021 - August 2022</i></p>
+    </div>
+    <h5>Responsibilities:</h5>
+    <ul>
+        <li>Functional, integration, and regression testing (Web, API).</li>
+        <li>Maintaining test plans, checklists, regression reports, etc.</li>
+        <li>Managing collections in Postman with environments using prerequisite scripts.</li>
+        <li>Functional testing of web services using Proxyman, Fiddler.</li>
+        <li>Testing mobile applications and UI (building mobile apps for Android, iOS).</li>
+    </ul>
+    <h5>Achievements:</h5>
+    <ul>
+        <li>Improved process stability by introducing TDD and Shift Left principles to the team, reducing critical severity defects.</li>
+        <li>Implemented a new defect management policy with quality metrics and defect containment analysis. Introduced a quality gate approach for two development stages, reducing defect containment by 50% (Q3/Q4).</li>
+    </ul>
+</section>
+<hr class="solid">
+
+<section>
+    <h3>Education</h3>
+    <h4>HSE University (2014 - 2020)</h4>
+    <div class="misc">
+        <p>BS: IT Management</p>
+        <p>Master's: Applied Mathematics, Human-Computer Interaction</p>
+    </div>
+</section>
+<hr class="solid">
+
+<section>
+    <h3>Languages</h3>
+    <div class="misc">
+        <p>English - B2</p>
+        <p>Russian - Native</p>
+    </div>
+</section>
+</body>
+</html>
